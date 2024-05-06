@@ -103,5 +103,11 @@ export default class App extends Component {
 
       </p>
     </section>
+    <footer>
+      <p class='text-center text-xs text-gray-500'>
+        Check on 
+        <a href='https://github.com/lifeart/walk-calc/' class='text-blue-500'>GitHub</a>
+      </p>
+    </footer>
   </template>
 }
