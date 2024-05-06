@@ -36,10 +36,6 @@ export default defineConfig(({ mode }) => ({
       compress: {
         hoist_funs: true,
         drop_console: true,
-        inline: 2,
-        passes: 5,
-        unsafe: true,
-        unsafe_symbols: true,
       },
       mangle: {
         module: true,
