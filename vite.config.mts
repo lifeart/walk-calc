@@ -28,8 +28,24 @@ export default defineConfig(({ mode }) => ({
     },
   },
   build: {
-    modulePreload: true,
+    modulePreload: false,
     target: "modules",
     minify: "terser",
+    terserOptions: {
+      module: true,
+      compress: {
+        hoist_funs: true,
+        drop_console: true,
+        inline: 2,
+        passes: 5,
+        unsafe: true,
+        unsafe_symbols: true,
+      },
+      mangle: {
+        module: true,
+        toplevel: true,
+        properties: false,
+      },
+    },
   },
 }));
