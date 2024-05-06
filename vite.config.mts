@@ -28,7 +28,7 @@ export default defineConfig(({ mode }) => ({
     },
   },
   build: {
-    modulePreload: false,
+    modulePreload: true,
     target: "esnext",
     minify: "terser",
   },
