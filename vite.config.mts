@@ -31,17 +31,5 @@ export default defineConfig(({ mode }) => ({
     modulePreload: false,
     target: "esnext",
     minify: "terser",
-    terserOptions: {
-      module: true,
-      compress: {
-        hoist_funs: true,
-        drop_console: true,
-      },
-      mangle: {
-        module: true,
-        toplevel: true,
-        properties: false,
-      },
-    },
   },
 }));
